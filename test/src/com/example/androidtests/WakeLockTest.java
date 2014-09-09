@@ -18,10 +18,12 @@ public class WakeLockTest extends Activity {
 	}
 
 	protected void onResume() {
+		super.onResume();
 		wakeLock.acquire();
 	}
 
 	protected void onPause() {
+		super.onPause();
 		wakeLock.release();
 	}
 }
